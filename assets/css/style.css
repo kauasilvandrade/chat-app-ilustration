@@ -32,17 +32,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     width: 100%;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: 'Rubik', sans-serif;
 }
 
 .conteudoContainer {
     max-width: 862px;
     width: 100%;
-    margin: 0 auto;
+    margin: 5rem auto 1rem auto;
     display: flex;
     align-items: center;
     gap: 9rem;
@@ -151,27 +150,80 @@ body {
 }
 
 /* ÁREA DA CONVERSA E DIGITAÇÃO DE MENSAGEM */
-.telaCelular__conversasUsuario {}
+.telaCelular__conversasUsuario {
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
 
-.conversasUsuario__mensagem {}
+.conversasUsuario__mensagem {
+    color: var(--corBatpapoLeft);
+    background: #80808029;
+    padding: 0.5rem;
+    width: 12rem;
+    border-radius: 10px;
+}
 
-.conversasUsuario__mensagem p {}
+.conversasUsuario__mensagem p {
+    font-size: 0.7em;
+    line-height: 1.4em;
+}
 
 /* MENSAGEM QUE VAI SER EXIBIDA NO CANTO DIREITO DA TELA */
-.conversasUsuario__mensagem--direita {}
+.conversasUsuario__mensagem--direita {
+    align-self: flex-end;
+    background-color: white;
+    color: var(--corBatpapoRight);
+    box-shadow: 2px 3px 7px #0000002e;
+}
 
-.conversasUsuario__mensagemImg {}
+.conversasUsuario__mensagemImg {
+    display: flex;
+    gap: 0.5rem;
+}
 
 .conversasUsuario__mensagemImg img {
-    width: 10px;
+    width: 50px;
+    border-radius: 10px;
 }
 
 /* MENSAGEM DE TEMPO E PREÇO DA CORRIDA */
-.conversasUsuario__mensagemTempoPreco {}
+.conversasUsuario__mensagemTempoPreco {
+    background-image: linear-gradient(to left, var(--gradientviolet), var(--gradientMagenta));
+    padding: 0.5rem 0.9rem;
+    width: 12rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
 
-.mensagemTempoPreco__tempo {}
+.mensagemTempoPreco__tempo {
+    font-size: 0.7em;
+    color: white;
+    padding-left: 1.3rem;
+}
 
-.mensagemTempoPreco__preco {}
+.mensagemTempoPreco__tempo::before {
+    content: '';
+    display: block;
+    width: 11px;
+    border-radius: 50%;
+    height: 11px;
+    background: transparent;
+    position: absolute;
+    top: 0.6rem;
+    border: 2px solid #fefefe36;
+    left: 0.7rem;
+}
+
+.mensagemTempoPreco__preco {
+    color: white;
+    font-weight: 600;
+}
 
 /* ÁREA DE DIGITAR MENSAGEM */
 .telaCelular__escreverMensagem {}
