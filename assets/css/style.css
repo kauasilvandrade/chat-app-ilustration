@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* PALETA DE CORES */
+:root {
+
+    /* TEXTO */
+    --subtituloUsuario: #d89eff;
+    --corBatpapoLeft: #9241c8;
+    --corBatpapoRight: #6e5d7e;
+    --titulo: #3e2753;
+    --paragrafo: #a39daa;
+
+    /* GRADIENTES */
+    --gradientMagenta: #e942ff;
+    --gradientviolet: #8838ff;
+    
+    /* CORES SECUNDÁRIAS */
+    --fundoApp: #f5f3f7;
+    --botaoEnviar: #3e2753;
+    --outlineBotaoEnviar: #e570ff;
+
+}
+
+/* CORPO */
+* {}
+
+body {}
