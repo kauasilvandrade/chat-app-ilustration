@@ -284,6 +284,7 @@ body {
 
     .conteudoContainer::after {
         height: 97vh;
+        left: -5.1rem;
     }
 
 }
