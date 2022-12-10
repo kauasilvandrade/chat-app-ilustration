@@ -40,7 +40,7 @@ body {
 }
 
 .conteudoContainer {
-    max-width: 880px;
+    max-width: 862px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -56,7 +56,7 @@ body {
     width: 28rem;
     height: 89vh;
     z-index: -1;
-    left: -82px;
+    left: -5.1rem;
     top: 0;
     border-radius: 0 0 43% 49%;
 }
@@ -69,36 +69,86 @@ body {
     width: 27rem;
     height: 89vh;
     z-index: -1;
-    right: -82px;
+    right: -5.1rem;
     bottom: 0;
     border-radius: 43% 49% 0 0;
 }
 
 /* CELULAR */
-.conteudo__telaCelular {}
+.conteudo__telaCelular {
+    background-color: var(--fundoApp);
+    border: 10px solid white;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    border-radius: 16px;
+}
 
 /* ÁREA DE INFORMAÇÕES DO PERFIL DO USUÁRIO */
-.telaCelular__infoUsuario {}
+.telaCelular__infoUsuario {
+    background-image: linear-gradient(to right, var(--gradientviolet), var(--gradientMagenta));
+    border-radius: 16px 16px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem;
+    padding-top: 2.3rem;
+    position: relative;
+}
 
-.infoUsuario__perfilUsuario {}
+.telaCelular__infoUsuario::before {
+    content: '';
+    background-color: white;
+    width: 58%;
+    height: 1.35rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    border-radius: 0 0 32px 32px;
+    left: 4rem;
+}
+
+.infoUsuario__perfilUsuario {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding-right: 3rem;
+}
 
 .perfilUsuario__iconeVoltar {}
 
-.perfilUsuario__iconeVoltar i {}
-
-.perfilUsuario__perfil {}
-
-.perfilUsuario__perfil img {
-    width: 10px;
+.perfilUsuario__iconeVoltar i {
+    color: white
 }
 
-.perfilUsuario__perfil h3 {}
+.perfilUsuario__perfil {
+    display: grid;
+    grid-template-columns: 2rem 8rem;
+    grid-template-rows: 1rem 1rem;
+    gap: 0.4rem 0.8rem;
+}
 
-.perfil__disponivel {}
+.perfilUsuario__perfil img {
+    width: 35px;
+    grid-row: 1/3;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.perfilUsuario__perfil h3 {
+    font-size: 0.9em;
+    color: white;
+    font-weight: 500;
+}
+
+.perfil__disponivel {
+    font-size: 0.7em;
+    color: var(--subtituloUsuario);
+}
 
 .infoUsuario__menu {}
 
-.infoUsuario__menu i {}
+.infoUsuario__menu i {
+    color: white;
+}
 
 /* ÁREA DA CONVERSA E DIGITAÇÃO DE MENSAGEM */
 .telaCelular__conversasUsuario {}
