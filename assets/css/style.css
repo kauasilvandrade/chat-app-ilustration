@@ -22,6 +22,128 @@
 }
 
 /* CORPO */
-* {}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-body {}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+}
+
+.conteudoContainer {
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 9rem;
+}
+
+.conteudoContainer::before {
+    position: absolute;
+    content: '';
+    background-image: linear-gradient(to right, var(--gradientviolet), var(--gradientMagenta) 148%);
+    display: block;
+    width: 28rem;
+    height: 89vh;
+    z-index: -1;
+    left: -82px;
+    top: 0;
+    border-radius: 0 0 43% 49%;
+}
+
+.conteudoContainer::after {
+    position: absolute;
+    content: '';
+    background-color: var(--fundoApp);
+    display: block;
+    width: 27rem;
+    height: 89vh;
+    z-index: -1;
+    right: -82px;
+    bottom: 0;
+    border-radius: 43% 49% 0 0;
+}
+
+/* CELULAR */
+.conteudo__telaCelular {}
+
+/* ÁREA DE INFORMAÇÕES DO PERFIL DO USUÁRIO */
+.telaCelular__infoUsuario {}
+
+.infoUsuario__perfilUsuario {}
+
+.perfilUsuario__iconeVoltar {}
+
+.perfilUsuario__iconeVoltar i {}
+
+.perfilUsuario__perfil {}
+
+.perfilUsuario__perfil img {
+    width: 10px;
+}
+
+.perfilUsuario__perfil h3 {}
+
+.perfil__disponivel {}
+
+.infoUsuario__menu {}
+
+.infoUsuario__menu i {}
+
+/* ÁREA DA CONVERSA E DIGITAÇÃO DE MENSAGEM */
+.telaCelular__conversasUsuario {}
+
+.conversasUsuario__mensagem {}
+
+.conversasUsuario__mensagem p {}
+
+/* MENSAGEM QUE VAI SER EXIBIDA NO CANTO DIREITO DA TELA */
+.conversasUsuario__mensagem--direita {}
+
+.conversasUsuario__mensagemImg {}
+
+.conversasUsuario__mensagemImg img {
+    width: 10px;
+}
+
+/* MENSAGEM DE TEMPO E PREÇO DA CORRIDA */
+.conversasUsuario__mensagemTempoPreco {}
+
+.mensagemTempoPreco__tempo {}
+
+.mensagemTempoPreco__preco {}
+
+/* ÁREA DE DIGITAR MENSAGEM */
+.telaCelular__escreverMensagem {}
+
+.escreverMensagem__mensagem {
+    height: 38px;
+}
+
+.escreverMensagem__botaoEnviar {}
+
+/* INTRODUÇÃO */
+.conteudo__introducao {}
+
+.conteudo__introducao h1 {
+    color: var(--titulo);
+    font-size: 2.2em;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.conteudo__introducao p {
+    color: var(--paragrafo);
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
